@@ -22,4 +22,72 @@ class LedManager(private val endpoint: LedEndpoint) {
         }
     }
 
+
+    suspend fun animWalkingFilled() {
+        try {
+            endpoint.animWalkingFilled()
+        } catch (e: Exception) {
+            Timber.e(e)
+        }
+    }
+
+    suspend fun animFill() {
+        try {
+            endpoint.animFill()
+        } catch (e: Exception) {
+            Timber.e(e)
+        }
+    }
+
+    suspend fun animFillJetdev() {
+        try {
+            endpoint.animFillJetdev()
+        } catch (e: Exception) {
+            Timber.e(e)
+        }
+    }
+
+    suspend fun animFRFlagVertical() {
+        try {
+            endpoint.animFRFlagVertical()
+        } catch (e: Exception) {
+            Timber.e(e)
+        }
+    }
+
+    suspend fun animFRFlagHorizontal() {
+        try {
+            endpoint.animFRFlagHorizontal()
+        } catch (e: Exception) {
+            Timber.e(e)
+        }
+    }
+
+    suspend fun animBEFlagHorizontal() {
+        try {
+            endpoint.animBEFlagHorizontal()
+        } catch (e: Exception) {
+            Timber.e(e)
+        }
+    }
+
+    suspend fun animITFlagHorizontal() {
+        try {
+            endpoint.animITFlagHorizontal()
+        } catch (e: Exception) {
+            Timber.e(e)
+        }
+    }
+
+
+    suspend fun reset() {
+        try {
+            endpoint.reset()
+        } catch (e: Exception) {
+            Timber.e(e)
+        }
+    }
+
+
+
 }

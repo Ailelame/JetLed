@@ -22,4 +22,37 @@ class MainViewModel(private val ledManager: LedManager) : ViewModel() {
         _isAlive.postValue(ping)
     }
 
+    fun jetDevFill() = viewModelScope.launch(Dispatchers.IO) {
+        ledManager.animFillJetdev()
+    }
+
+    fun animateWalkingFilled() = viewModelScope.launch(Dispatchers.IO) {
+        ledManager.animFillJetdev()
+    }
+
+    fun animateFull() = viewModelScope.launch(Dispatchers.IO) {
+        ledManager.animFill()
+    }
+
+    fun animFlagFrHorizontal() = viewModelScope.launch(Dispatchers.IO) {
+        ledManager.animFRFlagHorizontal()
+    }
+
+    fun animFlagFrVertical() = viewModelScope.launch(Dispatchers.IO) {
+        ledManager.animFRFlagVertical()
+    }
+
+    fun animFlagBe() = viewModelScope.launch(Dispatchers.IO) {
+        ledManager.animBEFlagHorizontal()
+    }
+
+    fun animFlagIt() = viewModelScope.launch(Dispatchers.IO) {
+        ledManager.animITFlagHorizontal()
+    }
+
+    fun reset() = viewModelScope.launch(Dispatchers.IO) {
+        ledManager.reset()
+    }
+
+
 }
