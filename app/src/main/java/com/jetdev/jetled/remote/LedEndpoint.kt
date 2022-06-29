@@ -33,7 +33,7 @@ interface LedEndpoint {
     @GET("/animations/it-flag-horizontal")
     suspend fun animITFlagHorizontal() : String
 
-    @GET("/reset")
+    @GET("/animations/reset")
     suspend fun reset() : String
 
 

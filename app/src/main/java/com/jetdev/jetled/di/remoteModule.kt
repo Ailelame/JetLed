@@ -21,7 +21,7 @@ val remoteModule = module {
         Retrofit.Builder()
             .addConverterFactory(MoshiConverterFactory.create())
             .addConverterFactory(ScalarsConverterFactory.create())
-            .baseUrl("http://192.168.33.1:4444")
+            .baseUrl("http://192.168.1.90:4444")
             .client(get())
             .build()
     }

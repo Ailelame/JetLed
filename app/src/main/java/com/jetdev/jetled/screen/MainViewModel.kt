@@ -27,7 +27,7 @@ class MainViewModel(private val ledManager: LedManager) : ViewModel() {
     }
 
     fun animateWalkingFilled() = viewModelScope.launch(Dispatchers.IO) {
-        ledManager.animFillJetdev()
+        ledManager.animWalkingFilled()
     }
 
     fun animateFull() = viewModelScope.launch(Dispatchers.IO) {
